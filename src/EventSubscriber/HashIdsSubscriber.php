@@ -56,6 +56,7 @@ final class HashIdsSubscriber implements EventSubscriberInterface
                 'fieldName' => self::FIELD_NAME,
                 'type' => 'string',
                 'nullable' => true,
+                'unique' => true,
             ]);
         }
     }
