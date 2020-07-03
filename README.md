@@ -88,3 +88,8 @@ class HashidableCustomGetterEntity implements HashidableInterface
 }
 
 ```
+
+## Configuration
+
+Internally the bundle uses https://github.com/roukmoute/hashids-bundle to generate
+hashids. See the `configuration` part for all possible options.
