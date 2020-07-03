@@ -1,6 +1,6 @@
 <?php
 
-namespace TSDevelopment\DoctrineBehaviorsHashidable\EventListener;
+namespace TSDevelopment\DoctrineBehaviorsHashidable\EventSubscriber;
 
 use Doctrine\Bundle\DoctrineBundle\EventSubscriber\EventSubscriberInterface;
 use Doctrine\Common\Persistence\Event\LifecycleEventArgs;
@@ -10,9 +10,9 @@ use Hashids\HashidsInterface;
 use TSDevelopment\DoctrineBehaviorsHashidable\Contract\Entity\HashidableInterface;
 
 /**
- * HashIdsListener.
+ * HashIdsSubscriber.
  */
-final class HashIdsListener implements EventSubscriberInterface
+final class HashIdsSubscriber implements EventSubscriberInterface
 {
     /** @var string */
     const FIELD_NAME = 'hashId';
